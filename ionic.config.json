@@ -1,0 +1,7 @@
+{
+  "name": "early-birds-ionic-client",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
