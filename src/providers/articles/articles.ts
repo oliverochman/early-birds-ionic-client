@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
 /*
   Generated class for the ArticlesProvider provider.
@@ -10,8 +11,26 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class ArticlesProvider {
 
+  response: Array<object> = [
+    {
+        "id":1,
+        "header":"Help me clean my room",
+        "subheader":"My room looks like shit",
+        "byline":"CraftAcademy"
+    },
+    {
+        "id":2,
+        "header":"Life insurance",
+        "subheader":"If I die, I want a lot of money",
+        "byline":"CraftAcademy"
+    }
+]
   constructor(public http: HttpClient) {
-    console.log('Hello ArticlesProvider Provider');
+   
   }
-
+  all(): any { 
+    return Observable.create(observer => {
+      observer.next(this.response)
+    })
+  }
 }
