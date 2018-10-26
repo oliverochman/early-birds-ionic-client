@@ -7,12 +7,16 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>article_index</ion-title>
+    <ion-title>News</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <div *ngFor="let article of articles">
+    <h2> {{article.header}}</h2>
+    <p>{{article.subheader}}</p>
+    <p>{{article.byline}}</p>
+  </div>
 </ion-content>

@@ -4,6 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ArticleIndexPage } from '../pages/article-index/article-index';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,6 +15,7 @@ import { ArticlesProvider } from '../providers/articles/articles';
   declarations: [
     MyApp,
     HomePage,
+    ArticleIndexPage
   ],
   imports: [
     BrowserModule,
@@ -22,6 +25,7 @@ import { ArticlesProvider } from '../providers/articles/articles';
   entryComponents: [
     MyApp,
     HomePage,
+    ArticleIndexPage
   ],
   providers: [
     StatusBar,

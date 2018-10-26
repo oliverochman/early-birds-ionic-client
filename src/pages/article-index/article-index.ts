@@ -13,6 +13,7 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'article-index.html',
 })
 export class ArticleIndexPage {
+  articles: Array<object>
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

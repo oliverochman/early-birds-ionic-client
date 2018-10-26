@@ -4,6 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { ArticleIndexPage } from '../pages/article-index/article-index';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -20,6 +22,7 @@ export class MyApp {
 
     this.pages = [
       { title: 'Home', component: HomePage },
+      { title: 'News', component: ArticleIndexPage }
     ];
 
   }
