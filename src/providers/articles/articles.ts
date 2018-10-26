@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
@@ -25,7 +24,7 @@ export class ArticlesProvider {
         "byline":"CraftAcademy"
     }
 ]
-  constructor(public http: HttpClient) {
+  constructor() {
    
   }
   all(): any { 
